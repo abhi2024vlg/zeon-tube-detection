@@ -1,0 +1,19 @@
+{
+  "total_gt": 50,
+  "total_pred": 50,
+  "total_tp": 50,
+  "total_fp": 0,
+  "total_fn": 0,
+  "dist_thresh_px": 15,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "dist_mae_px": 0.976,
+  "dist_rmse_px": 1.117,
+  "angle_mae_deg": 6.668,
+  "angle_rmse_deg": 10.768,
+  "angle_within_10deg": 82.0,
+  "angle_within_22deg": 92.0,
+  "angle_within_45deg": 98.0,
+  "angle_coverage_pct": 100.0
+}
