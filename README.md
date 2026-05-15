@@ -1,10 +1,10 @@
 # Microcentrifuge Tube Detection & Rotation
 
-Detects tube lids in overhead RGB images and estimates their full 0–360° orientation. Two-stage pipeline: YOLOv8n for axis-aligned detection, MobileNetV2 for orientation regression on the unit circle.
+Detects tube lids in overhead RGB images and estimates their full 0-360° orientation. Two-stage pipeline: YOLOv8n for axis-aligned detection, MobileNetV2 for orientation regression on the unit circle.
 
 ## Results
 
-Evaluated on a 15% held-out test split (10 images / 50 tubes), seed 42. Predictions matched to ground truth via Hungarian assignment on centre distance with a 15-px threshold.
+Evaluated on a 15% held-out test split (10 images / 50 tubes), seed 42. Predictions matched to ground truth via Hungarian assignment on centre distance with a 15 px threshold.
 
 | Metric | Test | Val |
 |---|---|---|
@@ -19,7 +19,7 @@ Evaluated on a 15% held-out test split (10 images / 50 tubes), seed 42. Predicti
 | Angle ≤ 22.5° | **100 %** | 92 % |
 | Angle ≤ 45° | 100 % | 98 % |
 
-Tight centre localisation (~1 px MAE) means the matching result is robust to threshold choice — P=R=F1=1.0 holds for any threshold ≥ 5 px.
+Tight centre localisation (~1 px MAE) means the matching result is robust to threshold choice - P=R=F1=1.0 holds for any threshold ≥ 5 px.
 
 ## Approach
 
